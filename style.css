@@ -1,0 +1,376 @@
+/* body {
+    background-image: url("backgroundimage.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+    color: #444;
+    letter-spacing: 1px;
+}
+
+
+
+h1,
+h2{
+    font-weight: normal;
+}
+
+
+#Wrapper{
+    background-color: #eee;
+    width: 90%;
+    max-width: 960px;
+    margin: 20px auto;
+    border-radius: 6px;
+    box-shadow: 1px 10px 10px rgba(0,0,0,0.7);
+    box-sizing: border-box;
+    padding: 0 0 20px;
+    overflow: hidden;
+    border: 1px solid lightgray;
+}
+
+
+#page-banner{
+    background-image: url("theaterscreen.jpg");
+    background-size: 100%;
+    align-items: center;
+    padding: 10px 0;
+}
+
+
+#page-banner h1,
+#page-banner p{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+
+
+#movie-list,
+#add-movie{
+    margin: 30px;
+}
+
+
+#movie-list ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+
+#movie-list li{
+    padding: 20px;
+    border-left: 5px solid #ddd;
+    margin: 20px 10px;
+}
+
+
+#movie-list li:hover{
+    border-color: #9361bf;
+}
+
+
+.delete{
+    float: right;
+    background: red;
+    padding: 6px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+}
+
+
+
+.delete:hover{
+    background: maroon;
+}
+
+
+#add-movie{
+    width: 400px;
+    margin: 0 auto;
+}
+
+
+#add-movie input{
+    display: block;
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    border-radius: 4px 0 0 4px;
+    box-sizing: border-box;
+    width: 300px;
+    float: left;
+    clear: both;
+}
+
+
+#add-movie button{
+    border: 1px solid green;
+    background: green;
+    padding: 10px 20px;
+    font-size: 16px;
+    display: inline-block;
+    margin: 0;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    width: 100px;
+    float: left;
+    margin: 20px 0;
+    border-left: 0;
+    color:  white;
+}
+
+
+#add-movie button:hover{
+    background-color: darkgreen;
+}
+
+
+#add-movie::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+#add-movie label{
+    line-height: 52px;
+} */
+
+
+/* Reset some default styles */
+
+/* body {
+    background-image: url("backgroundimage.jpg");
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: #eee;
+}
+
+#wrapper {
+    width: 80%;
+    margin: 30px auto;
+    background: #333;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#page-banner {
+    background-image: url("theaterscreen.jpg");
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #555;
+}
+
+.title {
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+#movie-list {
+    margin: 20px 0;
+}
+
+#movie-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+#movie-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #444;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+#movie-list .name {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+#movie-list .delete {
+    color: #ff4d4d;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+#movie-list .delete:hover {
+    color: #ff1a1a;
+}
+
+form#add-movie {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+form#add-movie input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+    font-size: 1rem;
+}
+
+form#add-movie button {
+    padding: 10px 20px;
+    border: none;
+    background: #5cb85c;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form#add-movie button:hover {
+    background: #4cae4c;
+} */
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: #0b0b0b; 
+    color: #eee;
+}
+
+#wrapper {
+    width: 80%;
+    margin: 30px auto;
+    background: #1c1c1c;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.9);
+    position: relative;
+}
+
+#page-banner {
+    background: #fefefe; 
+    border: 8px solid #ccc;
+    border-radius: 6px;
+    box-shadow: 
+        0 0 60px rgba(255, 255, 255, 0.2), 
+        0 0 20px rgba(255, 255, 255, 0.1);
+    padding: 30px 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+#page-banner::before,
+#page-banner::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 40px;
+    background: #555;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#page-banner::before {
+    left: -15px;
+}
+
+#page-banner::after {
+    right: -15px;
+}
+
+#page-banner h1 {
+    color: #111;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+#page-banner p {
+    color: #444;
+    margin: 10px 0 0;
+}
+
+#movie-list {
+    margin: 20px 0;
+}
+
+#movie-list h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#movie-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+#movie-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #2e2e2e;
+    padding: 12px 18px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+#movie-list .name {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#movie-list .delete {
+    color: #ff4d4d;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+#movie-list .delete:hover {
+    color: #ff1a1a;
+}
+
+form#add-movie {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+form#add-movie input {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+    font-size: 1rem;
+    background: #444;
+    color: #fff;
+}
+
+form#add-movie input::placeholder {
+    color: #bbb;
+}
+
+form#add-movie button {
+    padding: 12px 24px;
+    border: none;
+    background: #5cb85c;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form#add-movie button:hover {
+    background: #4cae4c;
+}
